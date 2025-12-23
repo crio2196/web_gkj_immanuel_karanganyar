@@ -1,0 +1,15 @@
+<h2>Jadwal Ibadah</h2>
+<ul id="jadwal"></ul>
+
+
+<script src="assets/js/api.js"></script>
+<script>
+fetch(`${API_URL}?sheet=jadwal_ibadah`)
+.then(res => res.json())
+.then(data => {
+const el = document.getElementById("jadwal");
+data.forEach(j => {
+el.innerHTML += `<li>${j.tanggal} | ${j.jam} | ${j.jenis_ibadah} - ${j.lokasi}</li>`;
+});
+});
+</script>

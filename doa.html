@@ -1,0 +1,18 @@
+<input id="nama" placeholder="Nama">
+<input id="hp" placeholder="No HP">
+<textarea id="doa"></textarea>
+<button onclick="kirim()">Kirim Doa</button>
+
+
+<script src="assets/js/api.js"></script>
+<script>
+function kirim() {
+fetch(API_URL, {
+method: "POST",
+body: JSON.stringify({
+sheet: "doa_jemaat",
+data: [new Date().toLocaleString(), nama.value, hp.value, doa.value]
+})
+}).then(() => alert("Tuhan memberkati 🙏"));
+}
+</script>

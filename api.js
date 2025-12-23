@@ -1,0 +1,1 @@
+const API_URL = "ISI_DENGAhttps://script.google.com/macros/s/AKfycbx4vARKUMKaHDSdZDqMIp7ZEgrbYCi3E6lnnQKJJWzVAgMc0Br9VFMwbBiyCRjXje-aag/execN_URL_APPS_SCRIPT";
